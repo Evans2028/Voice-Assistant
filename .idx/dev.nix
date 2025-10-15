@@ -5,12 +5,21 @@
   channel = "stable-25.05"; # or "unstable"
   # Use https://search.nixos.org/packages to find packages
   packages = [
-    # pkgs.go
-    pkgs.python314
-    pkgs.uv
-    # pkgs.python311Packages.pip
-    # pkgs.nodejs_20
-    # pkgs.nodePackages.nodemon
+    pkgs.python311
+    pkgs.python311Packages.pip
+    pkgs.espeak
+    pkgs.portaudio
+    pkgs.gcc
+    pkgs.pkg-config
+    pkgs.python311Packages.speechrecognition
+    pkgs.python311Packages.pyttsx3
+    pkgs.python311Packages.pyaudio
+    pkgs.python311Packages.wikipedia
+    pkgs.python311Packages.pyjokes
+    pkgs.python311Packages.requests
+    pkgs.python311Packages.google-generativeai
+    pkgs.python311Packages.python-dotenv
+    pkgs.python311Packages.pywhatkit
   ];
   # Sets environment variables in the workspace
   env = {};
